@@ -11,7 +11,6 @@ Vue.component('hijo',{
         <!-- **** FORMA DINAMICA ****-->
         <div class="py-5 bg-success">
             <h4>Componente hijo: {{numero}}</h4>
-            <h4>Nombre: {{nombre}}</h4>
         </div>
     `,
     // FORMA ESTATICA ARRIBA --> 
@@ -23,10 +22,5 @@ Vue.component('hijo',{
     // la gracia de la forma dinamicaes que el numero si se cambia en el complemento padre, tambien se cambiara en el 
     //complemento hijo inmediantamente.
     
-    props:['numero'],
-    data(){
-        return{
-            nombre:'Andres'
-        }
-    }
+    props:['numero']
 })
