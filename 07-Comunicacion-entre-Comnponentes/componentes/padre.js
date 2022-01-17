@@ -1,5 +1,6 @@
 Vue.component('padre', {
-    template:`
+    template: // html
+    `
         <!--  **** DE FORMA ESTATICA ****
         <div class="p-5 bg-dark text-white">
             <h2>Componente padre</h2>
