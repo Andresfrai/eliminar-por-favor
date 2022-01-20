@@ -1,42 +1,27 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-toolbar class="warning" app>
+    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-toolbar-title>VUETIFY</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>open_in_new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
+      <v-btn class="success">ingreso</v-btn>
+      <v-btn class="error">salir</v-btn>
+    </v-toolbar>
+    <v-navigation-drawer app v-model="drawer" temporary>
+      <v-layout mt-4 column align-center>
+        <v-felx>
+          <v-avatar>
+            <img src="https://randomuser.me/api/portraits/men/85.jpg">
+          </v-avatar>
+        </v-felx>
+        <v-flex>
+          <p>Juanito Perez</p>
+        </v-flex>
+      </v-layout>
+    </v-navigation-drawer>
     <v-main>
       <router-view/>
     </v-main>
@@ -49,7 +34,7 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    drawer: true
   }),
 };
 </script>
