@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar class="warning">
+    <v-toolbar class="warning" >
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>VUETIFY</v-toolbar-title>
@@ -19,6 +19,12 @@
         </v-flex>
         <v-flex>
           <p>Juanito Perez</p>
+        </v-flex>
+      </v-layout>
+      <v-layout>
+        <v-flex>
+          <v-btn color="success" block :to="{name: 'Home'}">Home</v-btn>
+          <v-btn color="success" block :to="{name: 'Tareas-CRUD'}">Lista de Tareas</v-btn>
         </v-flex>
       </v-layout>
     </v-navigation-drawer>
