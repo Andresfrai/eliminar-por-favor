@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar class="warning" app>
+    <v-toolbar class="warning">
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>VUETIFY</v-toolbar-title>
@@ -12,11 +12,11 @@
     </v-toolbar>
     <v-navigation-drawer app v-model="drawer" temporary>
       <v-layout mt-4 column align-center>
-        <v-felx>
+        <v-flex>
           <v-avatar>
             <img src="https://randomuser.me/api/portraits/men/85.jpg">
           </v-avatar>
-        </v-felx>
+        </v-flex>
         <v-flex>
           <p>Juanito Perez</p>
         </v-flex>
